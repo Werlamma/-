@@ -1,0 +1,11 @@
+from random import randint
+B = [randint (-10,10) for i in range (10)]
+print(B)
+i, j = 0, 0  
+for i in range (len(B)):
+    if B[i]!=0:
+        B[j]=B[i]
+        j += 1
+B = B[:j]
+print (B)
+
